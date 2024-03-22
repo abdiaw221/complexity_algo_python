@@ -31,3 +31,7 @@ def get_message_with_interval_code_ascii(number_1, number_2):
     else:
         message = "{} is less than {}".format(number_2, number_1)
     return message
+
+
+def format_in_majuscule(chaine):
+    return chaine.upper()
