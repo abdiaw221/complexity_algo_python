@@ -1,3 +1,6 @@
+from unidecode import unidecode
+
+
 def get_occurrence_number(chaine, character):
     number = 0;
     for letter in chaine:
@@ -35,3 +38,29 @@ def get_message_with_interval_code_ascii(number_1, number_2):
 
 def format_in_majuscule(chaine):
     return chaine.upper()
+
+
+def revert_cast(chaine):
+    result = ""
+    for ch in chaine:
+        if ch.islower():
+            result += ch.upper()
+        elif ch.isupper():
+            result += ch.lower()
+        else:
+            result += ch
+    return result
+
+
+def is_numeric(chaine):
+    return chaine.isdigit()
+
+
+def remove_accents(chaine):
+    string_without_accents = unidecode(chaine)
+    return string_without_accents.lower()
+
+
+def is_palindrome(chaine):
+    chaine = remove_accents(chaine)
+    return chaine[::-1] == chaine

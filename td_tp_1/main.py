@@ -1,5 +1,5 @@
 from td_tp_1.exercice_1 import get_occurrence_number, get_occurrence_number_count, first_position_of_occurrence, \
-    get_message_with_interval_code_ascii, format_in_majuscule
+    get_message_with_interval_code_ascii, format_in_majuscule, revert_cast, is_numeric, is_palindrome
 
 if __name__ == '__main__':
     print("TD_TP_1 started.")
@@ -45,12 +45,43 @@ if __name__ == '__main__':
     # print("Code ASCII between interval {} {}:  is {}".format(number_a, number_b, message))
     #
 
-    print("N 4 started.")
-    print("Returner chaine in majuscule")
-    message = input("Enter a chaine : ")
+    # print("N 4 started.")
+    # print("Returner chaine in majuscule")
+    # message = input("Enter a chaine : ")
+    #
+    # if not message:
+    #     print("No chaine")
+    # else:
+    #     convert_upper_message = format_in_majuscule(message)
+    #     print("Converted message to upper case: ", convert_upper_message)
 
-    if not message:
-        print("No chaine")
-    else:
-        convert_upper_message = format_in_majuscule(message)
-        print("Converted message to upper case: ", convert_upper_message)
+    # print("N 5 started.")
+    # print("Return revert chaine cast")
+    # message = input("Enter a chaine : ")
+    #
+    # if not message:
+    #     print("No chaine")
+    # else:
+    #     convert_cast_message = revert_cast(message)
+    #     print("Converted message to revert cast: ", convert_cast_message)
+
+    # print("N 6 started.")
+    # print("Return is numeric")
+    # chaine_A = "ABCDEFGHIJK"
+    # chaine_B = "1245468"
+    # chaine_C = "ABA126"
+    # # Expected False
+    # print(is_numeric(chaine_A))
+    # # Expected True
+    # print(is_numeric(chaine_B))
+    # # Expected False
+    # print(is_numeric(chaine_C))
+    #
+    print("N 7 started.")
+    print("Return is palindrome")
+
+    print(is_palindrome("radar"))
+    print(is_palindrome("kayak"))
+    print(is_palindrome("kayaks"))
+    print(is_palindrome("été"))
+
